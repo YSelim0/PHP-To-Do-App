@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://im0-tub-tr.yandex.net/i?id=acc0a5d807f286eb5ba08ecacc8f0ce4&n=13&exp=1" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font-family: 'Pacifico', cursive;             hand write -->
+    <!-- font-family: 'Recursive', sans-serif;        title font style -->
+    <!-- font-family: 'Antic Slab', serif;            explanation font style-->
+    <!-- font-family: 'Dosis', sans-serif; -->
+    <script src="https://use.fontawesome.com/9e11a9aef4.js"></script>
+    <script src="https://kit.fontawesome.com/880be0001f.js" crossorigin="anonymous"></script>
+    <title>To Do App</title>
+</head>
+<body>
+
+    <div class="container flex">
+        <div class="navbar flex ortala">
+            <button class="btn" name="yapilacak" onclick="degistir(this)" onmouseover="hover(this)" onmouseout="renkSifirla(this)"><i class="fas fa-pause"></i> Yapılacak</button>
+            <button class="btn" name="yapiliyor" onclick="degistir(this)" onmouseover="hover(this)" onmouseout="renkSifirla(this)"><i class="fas fa-play"></i> Yapılıyor</button>
+            <button class="btn" name="yapildi" onclick="degistir(this)" onmouseover="hover(this)" onmouseout="renkSifirla(this)"><i class="fas fa-check"></i> Yapıldı</button>
+        </div>
+
+        <div class="content flex ortala">
+            <div class="ekle flex ortala" id="ekle">
+                <div class="col flex ortala" >
+                    <h1>Başlık:</h1>
+                    <h1>Açıklama:</h1>
+                </div>
+                <div class="col flex ortala" >
+                    <input type="text" name="baslik" id="baslik" class="textbox">
+                    <input type="text" name="aciklama" id="aciklama" class="textbox">
+                </div>
+                <div class="col flex ortala">
+                    <button class="addtodo" onclick="ekle()"><i class="fas fa-plus-circle"></i> <br> <span>Ekle</span></button>
+                </div>
+            </div>
+
+            <div class="sirala" id="sirala">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
